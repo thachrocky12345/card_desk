@@ -119,7 +119,7 @@ Numbers should be in ascending order. 
 i.e. If the deck has a card contains with following order 
     (red, 1), (green, 5), (red, 0), (yellow, 3), (green, 2)
 i.	Sort cards ([yellow, green, red]) will return the cards with following order
-   (yellow, 3), (green, 0), (green, 5), (red, 0), (red, 1) 
+   (yellow, 3), (green, 2), (green, 5), (red, 0), (red, 1) 
 
 4.	Determine winners: 2 players play the game. They will draw 3 cards by taking turns.
 Whoever has the high score wins the game. (color point calculation, red = 3, yellow =2, green = 1) the point is calculated by color point * number in the card.  
