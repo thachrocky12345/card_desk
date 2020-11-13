@@ -1,11 +1,12 @@
-"# card_desk"
+# card_desk game
+
 Card has 3 colors associated with value:
-red = 3, yellow =2, green = 1
+* red = 3, yellow =2, green = 1
 
 As default each color will have 13 cards with value from 1 to 14.
 However you can set it with differently using by changing the NUMBER_VALUE_FOR_EACH_COLOR on config.py
 
-To sorted the card:
+* To sorted the card:
 deck = Deck()
 deck.sort_cards(["green", "red", "yellow"])
 
