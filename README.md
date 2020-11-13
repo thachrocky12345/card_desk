@@ -43,7 +43,7 @@ game = Game(players=["Thach", "Sean"])
 game.play(cards=50)
 ```
 
-the card will be distributed until the deck is emptied
+The cards will be distributed until the deck is emptied
 
 The winner is the one that has highest hand_score which is calculated by color point * number (color point calculation, red = 3, yellow =2, green = 1).
 
@@ -99,7 +99,8 @@ Ran 1 test in 0.000s
 OK
 ```
 
-Code interview question:
+## Code interview question:
+```
 1.	Work with the language you are most familiar with, but preferably the language which is the focus of the hiring.
 2.	The code you produce should be as close to “production quality” as possible, time permitting.
 This means you should document all assumptions, perform all tests, linting, etc. Tests should be extensible.
@@ -123,3 +124,4 @@ i.	Sort cards ([yellow, green, red]) will return the cards with following order
 4.	Determine winners: 2 players play the game. They will draw 3 cards by taking turns.
 Whoever has the high score wins the game. (color point calculation, red = 3, yellow =2, green = 1) the point is calculated by color point * number in the card.  
 
+```
