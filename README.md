@@ -3,22 +3,27 @@
 Card has 3 colors associated with value:
 * red = 3, yellow =2, green = 1
 
-As default each color will have 13 cards with value from 1 to 14.
-However you can set it with differently using by changing the NUMBER_VALUE_FOR_EACH_COLOR on config.py
+* As default each color will have 13 cards with value from 1 to 14.
 
-* To sorted the card:
+* However you can set it with differently using by changing the NUMBER_VALUE_FOR_EACH_COLOR on config.py
+
+## To sorted the card:
+```python
 deck = Deck()
 deck.sort_cards(["green", "red", "yellow"])
+```
 
-To start the game, you input the players with only names:
-example:
+
+## To start the game, you input the players with only names:
+At default, each player will only get 3 cards
+```python
 game = Game(players=["Thach", "Sean"])
-
-to play, at default, each player will only get 3 cards
-example:
 game.play()
-output:
+```
 
+
+output:
+```
 Sean is the winner with scores: 46
 Thach's hand:
 3 of green
@@ -29,10 +34,15 @@ Sean's hand:
 9 of yellow
 6 of green
 11 of yellow
+```
 
 
 ;however, you can set it differently using:
+```python
+game = Game(players=["Thach", "Sean"])
 game.play(cards=50)
+```
+
 the card will be distributed until the deck is emptied
 
 The winner is the one that has highest hand_score which is calculated by color point * number (color point calculation, red = 3, yellow =2, green = 1).
